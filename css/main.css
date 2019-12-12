@@ -1,0 +1,107 @@
+@import 'shared/variables.css';
+@import 'shared/header.css';
+
+html {
+    /*background-color: lightgray;*/
+    font-family: 'Raleway', sans-serif;
+    font-size: 20px;
+    /* min-height: 800px; */
+}
+
+@media only screen and (max-width: 600px) {
+    body {
+        width: auto;
+        background-color: pink;
+    }
+  }
+
+.img { 
+    max-width: 100%;
+
+}
+
+iframe { 
+    max-width: 100%;
+}
+
+  /* For mobile phones: */
+@media only screen and (min-width: 600px) {
+    body {
+        max-width: auto;
+        background-color: red;
+    }
+  }
+  /* For tablets: */
+  @media only screen and (min-width: 768px) {
+    body {
+        width: auto;
+        background-color: yellow;
+    }
+  }
+  @media only screen and (min-width: 980px) {
+    body {
+        width: auto;
+        background-color: green;
+    }
+  }
+
+a:link {
+ color: var(--color-text-light);
+
+}
+
+a:visited {
+    color: rgb(13, 13, 104);
+}
+
+a:hover {
+    color: black;
+}
+
+a:active {
+    color: white;
+}
+
+body {
+    margin: 8px auto;
+    /*background: linear-gradient(to right, var(--color-background-dark), var(--color-background-light)); */
+    color: var(--color-text-light);
+    width: 100%;
+    background: var(--color-background-light);
+}
+
+
+/* main {
+    min-height: 600px;
+} */
+
+section {
+    border-top: 2px solid black;
+}
+
+article {
+    padding: 10px;
+}
+
+nav {
+    padding: 10px;
+    border: 2px solid black;
+}
+
+header {
+    padding: 8px;
+    color: var(--color-text-light);
+    text-decoration: none;
+    font-size: var(--nav-title-font-size);
+    font-weight: var(--nav-title-font-weight);
+}
+/* 
+p { 
+    font-size: 20px;
+} */
+
+footer {
+    border-top: solid 2px darkgreen;
+    padding: 10px;
+    text-align: center;
+}
